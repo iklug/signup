@@ -27,20 +27,83 @@
       </div>
       <div class="signup-form">
         <p>Let's do this!</p>
-        <form action="something" method="post"></form>
-        <div class="form-column">
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-       
-        </div>
-        <div class="form-column">
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-       
+        <form action="something" method="post">
+          <div class="form-column">
+            <div class="form-row">
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                placeholder=" "
+              />
+            </div>
+            <div class="form-row">
+              <label for="user-email">EMAIL</label>
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder=" "
+              />
+            </div>
+            <div class="form-row">
+              <label for="user-password">PASSWORD</label>
+              <input
+                type="password"
+                id="user-password"
+                name="user-password"
+                placeholder=" "
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder=" "
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="user-phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                placeholder="000-000-0000"
+                required
+                minlength="10"
+              />
+            </div>
+            <div class="form-row">
+              <label for="confirm-pass">COMFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm-pass"
+                name="confirm-pass"
+                required
+                placeholder=" "
+              />
+            </div>
+            <!-- <div class="form-row hidden">
+              <input type="text" />
+            </div>
+            <div class="form-row hidden"></div>
+            <div class="form-row hidden"></div> -->
+          </div>
+        </form>
       </div>
-      <div class="submit-form"></div>
+      <div class="submit-form">
+        <div><button type="submit">Create Account</button></div>
+      </div>
+      <p class="login-blurb">
+        Already have an account? <a href="login.html"> Log in</a>
+      </p>
     </div>
   </body>
 </html>
